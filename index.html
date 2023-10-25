@@ -1,0 +1,418 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+/* Styling for the navigation bar */
+.navbar {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  background-color: #04AA6D;
+  color: white;
+  z-index: 1;
+}
+
+.navbar a {
+  float: left;
+  font-size: 16px;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  cursor: pointer;
+  color: white;
+}
+
+.navbar a:hover {
+  background-color: #038e5e; /* Hover background color */
+}
+
+/* Style for the menu icon */
+.icon {
+  display: none;
+  cursor: pointer;
+  color: white;
+}
+
+/* Highlighted navigation link style */
+.active {
+  background-color: #038e5e; /* Active link background color */
+  color: white; /* Active link font color */
+}
+
+/* Container for the content */
+.content-container {
+  padding: 20px;
+}
+
+/* Define sections to link to */
+.about-section {
+  background-color: #fff;
+  padding: 20px;
+  min-height: 100vh; /* Minimum height to keep sections from overlapping */
+}
+
+.loneliness-section {
+  background-color: #f9f9f9;
+  padding: 20px;
+  min-height: 100vh;
+}
+
+.help-section {
+  background-color: #eee;
+  padding: 20px;
+  min-height: 100vh;
+}
+
+.form-section {
+  background-color: #ddd;
+  padding: 20px;
+  min-height: 100vh;
+}
+
+.contact-section {
+  background-color: #ccc;
+  padding: 20px;
+  min-height: 100vh;
+}
+
+/* Styles for the new content */
+.header {
+  background-color: #333;
+  color: white;
+  padding: 20px;
+  text-align: center;
+}
+
+.container {
+  display: flex;
+  justify-content: space-between;
+  margin: 20px;
+}
+
+.content {
+  width: 48%;
+  background-color: white;
+  padding: 20px;
+}
+
+.media {
+  width: 48%;
+  background-color: white;
+  padding: 20px;
+}
+
+h1 {
+  font-size: 24px;
+}
+
+p {
+  font-size: 16px;
+}
+
+iframe {
+  width: 100%;
+  height: 360px;
+}
+
+.flyer-images {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 20px;
+}
+
+.flyer-images img {
+  width: 48%;
+  max-height: 200px;
+  object-fit: cover;
+}
+
+.footer {
+  background-color: #333;
+  color: white;
+  padding: 10px;
+  text-align: center;
+}
+
+/* Style for the section title */
+.section-title {
+  background-color: #333;
+  color: white;
+  text-align: center;
+  padding: 20px;
+}
+
+/* Style for the section content */
+.loneliness-content p {
+  margin: 10px 0;
+}
+
+.loneliness-content {
+  background-color: #fff;
+  padding: 20px;
+  font-size: 18px;
+  line-height: 1.6;
+  text-align: justify;
+  color: #333;
+  border-radius: 10px;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
+  margin: 20px;
+}
+
+/* Style for the references */
+.references {
+  background-color: #eee;
+  padding: 20px;
+}
+
+.references h2 {
+  color: #333;
+}
+
+.references a {
+  text-decoration: none;
+  color: #04AA6D;
+}
+
+.references a:hover {
+  text-decoration: underline;
+}
+</style>
+</head>
+<body>
+
+<div class="navbar">
+  <a href="#about" class="nav-link">About Us</a>
+  <a href="#loneliness" class="nav-link">More about Elderly Loneliness</a>
+  <a href="#help" class="nav-link">Ways to Help</a>
+  <a href="#form" class="nav-link">Message Form</a>
+  <a href="#contact" class="nav-link">Contact Us</a>
+  <a href="javascript:void(0);" class="icon" onclick="toggleNavbar()">&#9776;</a>
+</div>
+
+<!-- Container for your content -->
+<div class="content-container">
+  <section id="about" class="about-section">
+    <div class="header">
+      <h1>Elderly Loneliness</h1>
+    </div>
+    <div class="container">
+      <div class="content">
+        <h1>About Elderly Loneliness</h1>
+        <p>Elderly loneliness refers to the emotional and social isolation experienced by older individuals, typically those in the later stages of life. It occurs when older people lack meaningful social connections, companionship, or supportive relationships, leading to feelings of solitude, abandonment, and a sense of being disconnected from the world around them. Elderly loneliness can have adverse effects on the mental, emotional, and physical well-being of older adults, potentially leading to depression, anxiety, and various health problems. It often results from factors such as the loss of friends and family, reduced mobility, retirement, and other life changes that limit social interactions. Addressing elderly loneliness is essential for improving the overall quality of life and well-being of older individuals.</p>
+        <h1>About Us</h1>
+        <h4>Our Team</h4>
+        <p>We are a small but dedicated group of students who believe in the power of empathy, connection, and the potential for positive change. Meet our team: Sugam Drumil Felipe</p>
+        <h4>Our Mission</h4>
+        <p>At "Elderly Loneliness Awareness," our mission is to shine a light on a pressing issue—elder loneliness. We aim to create a more connected and compassionate world for our seniors, ensuring they enjoy their golden years with the love, companionship, and respect they deserve.</p>
+        <h4>Why We Care</h4>
+        <p>Elderly loneliness is a cause that resonates deeply with us. We've seen the effects of loneliness and its impact on the well-being of our elderly population. We care because we believe that no one, especially our beloved seniors, should have to feel isolated or alone.</p>
+      </div>
+
+      <div class="media">
+        <h1>Our Awareness Promotional Materials</h1>
+        <h2>Videos</h2>
+        <!-- Replace the video URL below with your actual video URL -->
+        <iframe src="https://www.youtube.com/embed/your-video-id" frameborder="0" allowfullscreen></iframe>
+        
+        <h2>Flyer</h2>
+        <!-- Replace the image URLs below with your actual image URLs -->
+        <div class="flyer-images">
+          <img src="https://images.pexels.com/photos/443446/pexels-photo-443446.jpeg?cs=srgb&dl=daylight-forest-glossy-443446.jpg&fm=jpg" alt="Flyer 1">
+          <img src="https://th.bing.com/th/id/OIP.VfdQVAZYFQGllSn1-Py30gHaE8?pid=ImgDet&w=474&h=316&rs=1" alt="Flyer 2">
+        </div>
+      </div>
+    </div>
+    
+    <div class="footer">
+      &copy; 2023 YourWebsiteName
+    </div>
+  </section>
+
+  <section id="loneliness" class="loneliness-section">
+    <div class="section-title">
+      <h1>More about Elderly Loneliness</h1>
+    </div>
+    <div class="loneliness-content">
+      <p>Loneliness and social isolation pose significant challenges for the elderly, impacting their overall health and well-being. As individuals age, they often experience increased periods of solitude, rendering them more susceptible to feelings of loneliness and social isolation. Research indicates that these conditions are associated with elevated risks of health issues such as heart disease, depression, and cognitive decline.</p>
+      <p>Loneliness represents the distressing sense of being alone or disconnected, while social isolation signifies a lack of social interactions and limited regular social contact. It's essential to recognize that one can live alone without feeling lonely or socially isolated, and conversely, one can experience loneliness even while in the company of others. Older adults face a higher risk of social isolation and loneliness due to various factors related to aging, such as health changes, hearing and vision impairments, memory loss, physical disabilities, mobility limitations, and the loss of family and friends.</p>
+      <p>The statistics are telling: In the United States, more than 14 million older adults live on their own, according to data from the Administration on Aging. Regrettably, loneliness and isolation are pressing concerns with serious implications for health. Both conditions are correlated with diminished physical and mental health, and they contribute to increased mortality rates.</p>
+      <p>Fortunately, there are strategies to mitigate loneliness and isolation among older adults. A fundamental step is understanding how these feelings manifest in real-life situations, enabling individuals to identify the signs in themselves or their loved ones and take appropriate measures to offer support. If you or someone you know is grappling with these emotions, reaching out to others for support is crucial. Additionally, engaging in activities that promote social connections can significantly alleviate these challenges.</p>
+    </div>
+    <div class="references">
+      <h2>References</h2>
+      <ul>
+        <li>
+          Neumann. K.D. (2022,07,20). Partical Ways to alleviate Lonliness And Isolation Among Older Adults. Forbes. 
+          <a href="https://www.forbes.com/health/healthy-aging/how-to-mitigate-senior-loneliness/" target="_blank">Read More</a>
+        </li>
+        <li>
+          National Institute on Aging. Loneliness And Social Isolation - Tips for Staying Connected. (2021,01,14). National Institute of Health. 
+          <a href="https://www.nia.nih.gov/health/loneliness-and-social-isolation-tips-staying-connected" target="_blank">Read More</a>
+        </li>
+        <li>
+          Chronic Loneliness in the Elderly: How to Help Yourself or Someone Else. (2022.02.24). Great Senior Living. 
+          <a href="https://www.greatseniorliving.com/articles/chronic-loneliness" target="_blank">Read More</a>
+        </li>
+      </ul>
+    </div>
+    <div class="footer">
+        &copy; 2023 YourWebsiteName
+      </div>
+  </section>
+
+  <section id="help" class="help-section">
+    <div class="section-title">
+      <h1>Ways to alleviate Elderly Loneliness</h1>
+    </div>
+    <div class="loneliness-content" style="text-align: center;">
+      <h1>Volunteer Your Time</h1>
+      <p>Make a difference in the lives of lonely seniors by volunteering at local senior centers or nursing homes. Spend time chatting, playing games, or assisting with daily activities. Your presence can brighten their day.</p>
+
+      <h1>Companion Programs</h1>
+      <p>Explore companion programs in your community that match volunteers with isolated seniors. These programs offer opportunities for regular visits and companionship. Check with local organizations or senior care facilities for details.</p>
+
+      <h1>Spread the Word</h1>
+      <p>Raise awareness about elder loneliness by sharing our message with your friends, family, and community. Download our posters and flyers to display in your local gathering places and social networks.</p>
+
+      <h1>Online Communities</h1>
+      <p>Join online forums, groups, or social media platforms where you can connect with seniors who may be feeling isolated. Offering virtual companionship and support can be as valuable as in-person interactions.</p>
+
+      <h1>Check on Elderly Neighbors</h1>
+      <p>Take a moment to check on your elderly neighbors, especially those living alone. A friendly conversation, offering assistance, or running errands can make a world of difference in their lives.</p>
+
+      <h1>Share Your Story</h1>
+      <p>Have a personal experience with elder loneliness or a heartwarming story of how you've made a senior's day brighter? Share your story with us to inspire others and build a sense of community.</p>
+
+      <h1>Support Local Services</h1>
+      <p>Frequent local businesses and services that cater to seniors. Whether it's a local meal delivery service, transportation assistance, or home healthcare providers, supporting these services contributes to the well-being of seniors in your area.</p>
+
+      <h1>Educate Yourself</h1>
+      <p>Learn more about the challenges of elder loneliness and how to recognize and address it in your community. Knowledge is the first step to making a positive impact.</p>
+
+      <h1>Small Gestures</h1>
+      <p>Brighten a senior's day with small gestures. Send a handwritten card, create care packages, or offer gifts of kindness. These thoughtful acts can bring a smile to their faces.</p>
+    </div>
+    <div class="footer">
+        &copy; 2023 YourWebsiteName
+      </div>
+  </section>
+
+  <section id="form" class="form-section">
+    <div class="section-title">
+      <h1>Message Form</h1>
+    </div>
+    <div class="loneliness-content">
+        <p>We believe that every story, thought, and piece of advice shared can make a difference in the lives of seniors dealing with loneliness. Your experiences, insights, and words of encouragement matter. Whether you have a personal story to tell, valuable advice to share, or a message of hope for lonely seniors, we invite you to use this space to make your voice heard.</p>
+        <!-- form starts here -->
+        <form action="https://httpbin.org/get" method="get">
+          <fieldset>
+              <legend id="form">Personal Info and Message </legend>
+              <p>
+                  <label for="Name">Name:</label>
+                  <input type="text" name="Name" id="Name" placeholder="Your Name" autocomplete="on" required="true">
+              </p>
+              <p>
+                  <label for="Phone No.">Phone No.:</label>
+                  <input type="tel" name="Phone" id="Phone" placeholder="5555555555" required="true"
+                      pattern="[0-9]{3}[0-9]{3}[0-9]{4}">
+              </p>
+              <p>
+                  <label for="Email">Email:</label>
+                  <input type="email" name="Email" id="Email" placeholder="abc.xyz@example.com">
+              </p>
+  
+  
+              <label for="Message:">Message:</label>
+              <textarea name="message" id="message" cols="100" rows="10" placeholder="Typer your message here"></textarea>
+              <br>
+              <br>
+              <button type="submit">Submit</button>
+              <button type="submit" formaction="https://httpbin.org/post" formmethod="post">Post</button>
+              <button type="reset">Reset</button>
+          </fieldset>
+  
+  
+  
+      </form>
+        <!-- form ends here -->
+        <p>Your contribution can inspire, offer comfort, and provide invaluable guidance to others. Together, we can build a community dedicated to combating elder loneliness and creating a more connected world for our seniors. Thank you for sharing your voice with us.</p>
+    </div>
+    <div class="footer">
+        &copy; 2023 YourWebsiteName
+      </div>
+  </section>
+
+  <section id="contact" class="contact-section">
+    <div class="section-title">
+      <h1>Contact Us</h1>
+    </div>
+    <div class="loneliness-content">
+      <fieldset>
+        <legend>Contact Information</legend>
+        <div style="text-align: center;">
+          <p>Feel free to get in touch with us via email or visit our location in Toronto, Canada:</p>
+        </div>
+        
+        <div style="text-align: center;">
+          <h3>Our Email</h3>
+          <p>Sugam: <a href="mailto:sugamemail.com">sugamemail.com</a></p>
+          <p>Drumil: <a href="mailto:drumilemail.com">drumilemail.com</a></p>
+          <p>Felipe: <a href="mailto:felipeemail.com">felipeemail.com</a></p>
+        </div>
+
+        <div style="text-align: center;">
+          <h3>Our Location</h3>
+          <p>740 Bathurst St., Toronto, Canada</p>
+        </div>
+      </fieldset>
+    </div>
+    <div class="footer">
+        &copy; 2023 YourWebsiteName
+      </div>
+  </section>
+
+
+
+
+</div>
+
+<script>
+function toggleNavbar() {
+  var x = document.querySelector(".navbar");
+  if (x.className === "navbar") {
+    x.className += " responsive";
+  } else {
+    x.className = "navbar";
+  }
+}
+
+// Highlight the active navigation link as you scroll through the sections
+var navLinks = document.querySelectorAll(".nav-link");
+var sections = document.querySelectorAll("section");
+
+window.addEventListener("scroll", function () {
+  var currentSection = null;
+
+  // Determine which section is currently in view
+  sections.forEach(function (section, index) {
+    var rect = section.getBoundingClientRect();
+    if (rect.top <= 80 && rect.bottom >= 0) {
+      currentSection = navLinks[index];
+    }
+  });
+
+  // Remove the "active" class from all links
+  navLinks.forEach(function (link) {
+    link.classList.remove("active");
+  });
+
+  // Add the "active" class to the currently active link
+  if (currentSection) {
+    currentSection.classList.add("active");
+  }
+});
+</script>
+
+</body>
+</html>
